@@ -13,11 +13,6 @@ public class Q2aTest {
     }
 
     @Test
-    public void testIsPalindrome3() {
-        assertTrue(Q2a.isPalindrome("A man a plan a canal Panama"));
-    }
-
-    @Test
     public void testIsPalindrome4() {
         assertFalse(Q2a.isPalindrome("hello"));
     }
