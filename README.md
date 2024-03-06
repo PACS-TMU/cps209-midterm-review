@@ -16,7 +16,7 @@ Question sets along with test cases for PACS CPS209 Midterm Review Session.
 - Mark the test folder as Test Sources Root
 - Mark the src folder as Sources Root
 - Go to project settings and add JUnit 5 to the classpath
-    - Project Structure -> Libraries -> Add -> From Maven -> Search `org.junit.jupiter:junit-jupiter-api:5.7.0` and add it
+    - Project Structure > Libraries > Add > Maven > Search `org.junit.jupiter:junit-jupiter-api:5.7.0` and add it
 - Run the test cases in the test folder
 
 ### VSCode
