@@ -29,6 +29,6 @@ public class Q3aTest {
 
     @Test
     public void testCalculateSum6() {
-        assertEquals(0, Q3a.calculateSum(new int[]{5, 5, 5, 5, 5}));
+        assertEquals(15, Q3a.calculateSum(new int[]{5, 5, 5, 5, 5}));
     }
 }

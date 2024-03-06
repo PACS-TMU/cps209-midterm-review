@@ -7,6 +7,26 @@
 public class Q3a {
     public static int calculateSum(int[] input) {
         // TODO: Implement this method
-        return 0;
+        if (input.length == 0) {
+            return -1;
+        } else if (input.length == 1) {
+            return input[0];
+        } else if (input.length == 2) {
+            return 0;
+        } else {
+            int max = input[0];
+            int min = input[0];
+            int sum = 0;
+            for (int i = 0; i < input.length; i++) {
+                if (input[i] > max) {
+                    max = input[i];
+                }
+                if (input[i] < min) {
+                    min = input[i];
+                }
+                sum += input[i];
+            }
+            return sum - max - min;
+        }
     }
 }

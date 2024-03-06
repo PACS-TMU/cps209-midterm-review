@@ -4,6 +4,19 @@
 public class Q2a {
     public static boolean isPalindrome(String input) {
         // TODO: Implement this method
-        return false;
+        String str = input.toLowerCase();
+        String reversedStr = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversedStr += str.charAt(i);
+        }
+        return str.equals(reversedStr);
+    }
+    public static void main(String[] args) {
+        // Test the isPalindrome method
+        System.out.println(isPalindrome("racecar")); // true
+        System.out.println(isPalindrome("hello")); // false
+        System.out.println(isPalindrome("asdfdsa")); // true
+        System.out.println(isPalindrome("12321")); // true
+        System.out.println(isPalindrome("12345")); // false
     }
 }

@@ -7,6 +7,13 @@ import java.util.ArrayList;
 public class Q3b {
     public static double calculateAverage(ArrayList<Course> courses) {
         // TODO: Implement this method
-        return -1;
+        if (courses.size() == 0) {
+            return -1;
+        }
+        double sum = 0;
+        for (Course course : courses) {
+            sum += course.getGrade();
+        }
+        return sum / courses.size();
     }
 }
