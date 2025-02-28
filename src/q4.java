@@ -31,7 +31,7 @@
         boolean[] expectedResults = {true, false, true, true, false, true, true};
 
         System.out.println("\nTesting `isPalindrome` function:");
-        System.out.println("--------------------------------------\n");
+        System.out.println("------------------------------------\n");
 
         for (int i = 0; i < testCases.length; i++) {
             boolean result = isPalindrome(testCases[i]);
@@ -51,6 +51,21 @@
 
     public static boolean isPalindrome(String str) {
         // TO DO: Implement the method to check if `str` is a palindrome below
-        return false; // Placeholder return statement
+        if (str == null || str.length() <= 1) {
+            return true;
+        }
+        
+        int left = 0;
+        int right = str.length() - 1;
+        
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        
+        return true;
     }
 }

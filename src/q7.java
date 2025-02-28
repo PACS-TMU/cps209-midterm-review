@@ -45,6 +45,7 @@ class CreditCard implements PaymentMethod {
     @Override
     public void processPayment(double amount) {
         // TO DO: Implement processing logic
+        System.out.println("Processing credit card payment of $" + amount);
     }
 }
 
@@ -53,6 +54,7 @@ class PayPal implements PaymentMethod {
     @Override
     public void processPayment(double amount) {
         // TO DO: Implement processing logic
+        System.out.println("Processing PayPal payment of $" + amount);
     }
 }
 
@@ -60,6 +62,7 @@ class PayPal implements PaymentMethod {
 class PaymentProcessor {
     public void processOrder(PaymentMethod paymentMethod, double amount) {
         // TO DO: Call processPayment on the given payment method
+        paymentMethod.processPayment(amount);
     }
 }
 

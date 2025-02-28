@@ -110,7 +110,21 @@ public class q1 {
 
     public static int findSecondLargest(int[] arr) {
         // TO DO: Write your code below
-        return 0;
+        if (arr.length < 2) return -1;
+        
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+        
+        for (int num : arr) {
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num < largest) {
+                secondLargest = num;
+            }
+        }
+        
+        return (secondLargest == Integer.MIN_VALUE) ? largest : secondLargest;
     }
 
     /*

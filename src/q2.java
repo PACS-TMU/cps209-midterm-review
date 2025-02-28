@@ -65,12 +65,15 @@ class BankAccount {
     public BankAccount(String accountNumber, String accountHolder, double initialBalance) {
         // TO DO: Initialize accountNumber and accountHolder
         // TO DO: Ensure initialBalance is >= 0, otherwise set it to 0
+        this.accountNumber = accountNumber;
+        this.accountHolder = accountHolder;
+        this.balance = Math.max(initialBalance, 0); // Ensure initial balance is not negative
     }
 
     // Getter and Setter methods for accountNumber
     public String getAccountNumber() {
         // TO DO: Implement the method
-        return "";
+        return accountNumber;
     }
 
     public void setAccountNumber(String accountNumber) {
@@ -80,7 +83,7 @@ class BankAccount {
     // Getter and Setter methods for accountHolder
     public String getAccountHolder() {
         // TO DO: Implement the method
-        return "";
+        return Double.toString(balance);
     }
 
     public void setAccountHolder(String accountHolder) {
@@ -94,25 +97,44 @@ class BankAccount {
 
     public void setBalance(double balance) {
         // TO DO: Implement the method to ensure balance is >= 0
+        if (balance >= 0) {
+            this.balance = balance;
+        }
     }
 
     // Method to deposit funds into the account
     public void deposit(double amount) {
         // TO DO: Implement the method to deposit money if amount > 0
         // TO DO: Print an error if the amount is <= 0
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited: $" + amount);
+        } else {
+            System.out.println("Error: Deposit amount must be positive.");
+        }
     }
 
     // Method to withdraw funds from the account
     public void withdraw(double amount) {
         // TO DO: Implement the method to withdraw money if amount <= balance
         // TO DO: Print an error if the amount exceeds balance or is <= 0
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawn: $" + amount);
+        } else if (amount > balance) {
+            System.out.println("Insufficient funds.");
+        } else {
+            System.out.println("Error: Withdrawal amount must be positive.");
+        }
     }
 
     // Method to display account details
     public void displayAccountDetails() {
+        System.out.println("Account Details:");
         System.out.println("Account Number: " + accountNumber);
         System.out.println("Account Holder: " + accountHolder);
         System.out.println("Balance: $" + balance);
+        System.out.println();
     }
 
     /*

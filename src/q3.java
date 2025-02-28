@@ -34,10 +34,12 @@ abstract class Media {
 
     public Media(String title) {
         // TO DO: Initialize title
+        this.title = title;
     }
 
     public String getTitle() {
         // TO DO: Return title
+        return title;
     }
 
     public abstract void displayDetails();
@@ -50,11 +52,18 @@ class Book extends Media {
 
     public Book(String title, String author, int pageCount) {
         // TO DO: Initialize fields
+        super(title);
+        this.author = author;
+        this.pageCount = pageCount;
     }
 
     @Override
     public void displayDetails() {
         // TO DO: Display book details
+        System.out.println("Book Details:");
+        System.out.println("Title: " + getTitle());
+        System.out.println("Author: " + author);
+        System.out.println("Page Count: " + pageCount);
     }
 }
 
@@ -65,11 +74,18 @@ class DVD extends Media {
 
     public DVD(String title, String director, int duration) {
         // TO DO: Initialize fields
+        super(title);
+        this.director = director;
+        this.duration = duration;
     }
 
     @Override
     public void displayDetails() {
         // TO DO: Display DVD details
+        System.out.println("DVD Details:");
+        System.out.println("Title: " + getTitle());
+        System.out.println("Director: " + director);
+        System.out.println("Duration: " + duration + " minutes");
     }
 }
 
@@ -81,11 +97,12 @@ public class q3 {
         DVD dvd = new DVD("Inception", "Christopher Nolan", 148);
 
         // TO DO: Display book details
+        book.displayDetails();
 
         // Blank line
         System.out.println();
 
         // TO DO: Display DVD details
-
+        dvd.displayDetails();
     }
 }

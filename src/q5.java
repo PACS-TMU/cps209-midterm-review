@@ -61,7 +61,21 @@
 
     public static int sumArray(int[] arr) {
         // TO DO: Implement the method to calculate the sum based on the given conditions
-        return 0; // Placeholder return statement
+        if (arr.length == 0) {
+            return -1;
+        }
+        if (arr.length == 1) {
+            return arr[0];
+        }
+        if (arr.length == 2) {
+            return 0;
+        }
+        
+        int sum = 0;
+        for (int num : arr) {
+            sum += num;
+        }
+        return sum;
     }
 
     private static void printArray(int[] arr) {
