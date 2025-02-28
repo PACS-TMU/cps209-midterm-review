@@ -20,6 +20,10 @@
  * Do not edit any other code.
  *
  * There are hints below to help you if you get stuck. Only read them if you need to.
+ * 
+ * Task:
+ * Fill in the missing parts below the comment `TO DO`.
+ * DO NOT EDIT ANY OTHER CODE.
  */
 public class q2 {
     public static void main(String[] args) {
@@ -49,17 +53,6 @@ public class q2 {
         BankAccount account3 = new BankAccount("11223", "Alice Johnson", 0.0);
         account3.displayAccountDetails();
     }
-
-    /*
-     * Hints:
-     * 1. The BankAccount class should have private instance variables for accountNumber, accountHolder, and balance.
-     * 2. The constructor should accept an accountNumber, accountHolder, and an initialBalance.
-     * 3. If the initialBalance is negative, set it to 0.
-     * 4. Implement setter and getter methods for each instance variable.
-     * 5. Implement deposit and withdraw methods.
-     * 6. Make sure withdrawal does not exceed balance, and handle negative deposit or withdrawal amounts.
-     * 7. Implement the displayAccountDetails method to show the account details.
-     */
 }
 
 class BankAccount {
@@ -70,13 +63,13 @@ class BankAccount {
 
     // Constructor to initialize the bank account
     public BankAccount(String accountNumber, String accountHolder, double initialBalance) {
-        // Initialize accountNumber and accountHolder
-        // Ensure initialBalance is >= 0, otherwise set it to 0
+        // TO DO: Initialize accountNumber and accountHolder
+        // TO DO: Ensure initialBalance is >= 0, otherwise set it to 0
     }
 
     // Getter and Setter methods for accountNumber
     public String getAccountNumber() {
-        // Implement the method
+        // TO DO: Implement the method
         return "";
     }
 
@@ -86,7 +79,7 @@ class BankAccount {
 
     // Getter and Setter methods for accountHolder
     public String getAccountHolder() {
-        // Implement the method
+        // TO DO: Implement the method
         return "";
     }
 
@@ -100,19 +93,19 @@ class BankAccount {
     }
 
     public void setBalance(double balance) {
-        // Implement the method to ensure balance is >= 0
+        // TO DO: Implement the method to ensure balance is >= 0
     }
 
     // Method to deposit funds into the account
     public void deposit(double amount) {
-        // Implement the method to deposit money if amount > 0
-        // Print an error if the amount is <= 0
+        // TO DO: Implement the method to deposit money if amount > 0
+        // TO DO: Print an error if the amount is <= 0
     }
 
     // Method to withdraw funds from the account
     public void withdraw(double amount) {
-        // Implement the method to withdraw money if amount <= balance
-        // Print an error if the amount exceeds balance or is <= 0
+        // TO DO: Implement the method to withdraw money if amount <= balance
+        // TO DO: Print an error if the amount exceeds balance or is <= 0
     }
 
     // Method to display account details
@@ -121,5 +114,16 @@ class BankAccount {
         System.out.println("Account Holder: " + accountHolder);
         System.out.println("Balance: $" + balance);
     }
+
+    /*
+     * Hints:
+     * 1. The BankAccount class should have private instance variables for accountNumber, accountHolder, and balance.
+     * 2. The constructor should accept an accountNumber, accountHolder, and an initialBalance.
+     * 3. If the initialBalance is negative, set it to 0.
+     * 4. Implement setter and getter methods for each instance variable.
+     * 5. Implement deposit and withdraw methods.
+     * 6. Make sure withdrawal does not exceed balance, and handle negative deposit or withdrawal amounts.
+     * 7. Implement the displayAccountDetails method to show the account details.
+     */
 }
 
