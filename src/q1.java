@@ -5,6 +5,8 @@
  * 
  * Only implement the `findSecondLargest` function. Do not change the signature of the function.
  * Do not edit any other code.
+ * 
+ * There are hints below to help you if you get stuck. Only read them if you need to.
  */
 public class q1 {
     public static void main(String[] args) {
@@ -107,4 +109,16 @@ public class q1 {
         // Write your code below
         return 0;
     }
+
+    /*
+     * Hints - Only read these if you are stuck!!
+     * 
+     * Hint 1: One options is that you can sort the array in ascending order to find the 
+     * second largest element.
+     * 
+     * Hint 2: Another options is that you can also keep track of the largest and 
+     * second largest elements as you iterate through the array (single loop, no sorting).
+     * 
+     * Hint 3: Make sure to handle the case where the array has less than 2 elements.
+     */
 }
