@@ -1,25 +1,22 @@
 # CPS209-Midterm-Review
 Question sets along with test cases for PACS CPS209 Midterm Review Session.
 
-## Registration
-<p align="center">
-    <img src="/209_registration.png">
-</p>
-
 ## Instructions
 ### Downloading the code
+Option 1:
 - Click on the green `Code` button and download the zip file
 - Extract the zip file to a location of your choice
 - Open the folder in your favorite IDE
 
-### IntelliJ
-- Mark the test folder as Test Sources Root
-- Mark the src folder as Sources Root
-- Go to project settings and add JUnit 5 to the classpath
-    - Project Structure > Libraries > Add > Maven > Search `org.junit.jupiter:junit-jupiter-api:5.7.0` and add it
-- Run the test cases in the test folder
+Option 2:
+- Fork this repository to your local GitHub
+- Use `git clone` to clone it to your local workspace
+- Open the folder in your favorite IDE 
 
-### VSCode
-- Run the main function in the question class
+### Running Instruction
+- Open the files under the `/src` directory.
+- Ensure that you have the Java JDK/SDK installed on your device.
+- Edit the content of the functions. DO NOT EDIT ANYTHING ELSE!
+- Run the file to see the output of your functions.
 
-###### Thank you all for coming to the review session. I hope you all have a great midterm. Good luck!
+###### Thank you all for coming to the review session. We hope you all have a great midterm. Good luck!
